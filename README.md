@@ -110,6 +110,12 @@ gasotracker({
 	}
 })
 ```
+###TODO
+- Add support for other social networks
+- Ability to have a pinmarklet if needed 
+- Better way to initialize FacebookTracker after FB loaded
+- Support for Classic Google Analytics (ga.js) (not sure)
+- Support for other Analytics (e.g.: Flurry Analytics)
 
 ###License
 This plugin is released under the permissive MIT license. Your contributions are always welcome.
