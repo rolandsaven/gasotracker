@@ -19,8 +19,7 @@ Gasotracker is a plugin written in JavaScript that observes the social interacti
 
 ###Basic Installation
 
-Include the Universal Analytics snippet before the closing head tag
-Download and extract the [latest zip package](https://github.com/rolandkal/gasotracker/archive/master.zip) from Github and copy gasotracker.js into your project, then include them using the method specified below that is appropriate. I would recommend to place it just before the closing body tag. By default, everything is disabled.
+Include the Universal Analytics snippet before the closing head tag. Download and extract the [latest zip package](https://github.com/rolandkal/gasotracker/archive/master.zip) from Github and copy gasotracker.js into your project, then include them using the method specified below that is appropriate. I would recommend to place it just before the closing body tag. By default, everything is disabled.
 ```html
 <script type="text/javascript" src="/js/gasotracker.js"></script>
 <script type="text/javascript">gasotracker()</script>
@@ -47,10 +46,10 @@ Remember not to call FB.init() as the tracker will do that for you. Just provide
 
 ```javascript
 gasotracker({
-  facebook:{
-    enabled : true,
-	  appId:'12345678912346679',
-  }
+	facebook:{
+		enabled : true,
+		appId:'12345678912346679',
+	}
 });
 ```
 
@@ -101,14 +100,14 @@ Do not include pinterest's pin.js, it removes the ability to add an event listen
 Enables logger and sandbox mode.
 ```javascript
 gasotracker({
-    sandbox : false,
-		logger : false,
-		instagram: {
-		  enabled:true,
-    },
-    pinterest: {
-		  enabled:true,
-    }
+	sandbox : false,
+	logger : false,
+	instagram: {
+		enabled:true,
+	},	
+	pinterest: {
+		enabled:true,
+	}
 })
 ```
 
