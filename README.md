@@ -1,12 +1,14 @@
-#gasotracker
+**PLEASE NOTE THAT THIS PLUGIN IS DISCONTINUED**
+
+# gasotracker
 
 gasotracker.js may be freely distributed under the [MIT license](http://opensource.org/licenses/MIT).
 
-###Description:
+### Description:
 
 Gasotracker is a plugin written in JavaScript that observes the social interactions on a website and sends it to Universal Analytics. It supports Facebook, Twitter, Pinterest, and Instragram.
 
-###Features:
+### Features:
 
 - works with Universal Analytics (universal.js)
 - facebook: like, dislike, and feed(share) events
@@ -17,7 +19,7 @@ Gasotracker is a plugin written in JavaScript that observes the social interacti
 - logger
 
 
-###Basic Installation
+### Basic Installation
 
 Include the Universal Analytics snippet before the closing head tag. Download and extract the [latest zip package](https://github.com/rolandkal/gasotracker/archive/master.zip) from Github and copy gasotracker.js into your project, then include them using the method specified below that is appropriate. I would recommend to place it just before the closing body tag. By default, everything is disabled.
 ```html
@@ -25,7 +27,7 @@ Include the Universal Analytics snippet before the closing head tag. Download an
 <script type="text/javascript">gasotracker()</script>
 ```
 
-####Facebook:
+#### Facebook:
 We use Facebook’s API to track events. It is necessary to have an Application ID.
 You have to include their javascript snippet manually on the site. They say to place it just after the opening body tag
 
@@ -60,7 +62,7 @@ This can be further customizable. See the following example
 <a class="fb gst-event" data-gst-fb="feed" data-gst-fb-pic="http://sample.com/sample.jpg" target="_blank" href="http://currenturl.com" data-gst-fb-desc="description" data-gst-fb-cap="caption" data-gst-fb-name="name"></a>
 ```
 
-####Twitter:
+#### Twitter:
 
 We use their API’s to track events. All you have to do is to include Twitter’s widget.js before calling the tracker. You really don’t want to track the "click" event, so you can remove it.
 
@@ -77,7 +79,7 @@ We use their API’s to track events. All you have to do is to include Twitter�
 </script>
 ```
 
-####Pinterest and Instagram:
+#### Pinterest and Instagram:
 
 Neither of them has API that would support callbacks after an event fired, so we are basically tracking a click event on an element. I know, it doesn’t provide the most accurate information. 
 
@@ -96,7 +98,7 @@ for instagram:
 Do not include pinterest's pin.js, it removes the ability to add an event listener to the element.
 
 
-###Miscellaneous:
+### Miscellaneous:
 Enables logger and sandbox mode.
 ```javascript
 gasotracker({
@@ -110,12 +112,12 @@ gasotracker({
 	}
 })
 ```
-###TODO
+### TODO
 - Add support for other social networks
 - Ability to have a pinmarklet if needed 
 - Better way to initialize FacebookTracker after FB loaded
 - Support for Classic Google Analytics (ga.js) (not sure)
 - Support for other Analytics (e.g.: Flurry Analytics)
 
-###License
+### License
 This plugin is released under the permissive MIT license. Your contributions are always welcome.
